@@ -12,7 +12,12 @@ string_var=tk.StringVar(value="")
 #button function
 def button_func():
     print(string_var.get())
+    string_var.set('Your name has been upload')
 
+
+
+label_1=ttk.Label(master=Windows,text='Enter your Name')
+label_1.pack()
 
 #creting label
 label=ttk.Label(master=Windows,text='label',textvariable=string_var)
